@@ -1,0 +1,199 @@
+a{
+    color: black;
+
+}
+.navbar{
+    background-color: var(--color-darkblue-2);
+    height: 100vh;
+    width: var(--navbar-width);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0.05rem 0 1rem 0.1rem rgba(var(--color-darkblue-2-rgb),0.3);
+    padding-top: 1rem;
+    border-right: 0.01rem solid rgba(var(--color-blue-1-rgb),0.3);
+    transition: 0.5s;
+    z-index: 10;
+}
+.spacer{
+    flex-grow: 2;
+}
+
+
+.navbar-logo{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(31%) sepia(95%) saturate(1047%) hue-rotate(189deg) brightness(70%) contrast(103%);
+    background-image: url("../assets/images/logo.svg");
+    transition: all 0.5s;
+
+}
+.navbar-logo:hover{
+    transform: scale(1.1);
+    filter: invert(31%) sepia(95%) saturate(1047%) hue-rotate(190deg) brightness(85%) contrast(103%);
+}
+
+.navbar-item{
+    border: 2px solid var(--color-darkblue-1);
+    margin-bottom: 0.5rem;
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    max-height: 2.5rem;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--color-blue-1);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.4s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+.navbar-item-home{
+    margin-top: 1rem;
+    width: 100%;
+    flex-grow: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.4s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+.navbar-item-home-icon:hover{
+    transform: scale(1.1) translateY(-0.2rem);
+    filter: invert(31%) sepia(95%) saturate(1047%) hue-rotate(190deg) brightness(90%) contrast(70%);
+}
+.navbar-item-home-icon{
+    transition: all 0.4s;
+    filter: invert(31%) sepia(95%) saturate(1047%) hue-rotate(190deg) brightness(85%) contrast(103%);
+}
+
+.closed:hover{
+    background-color: var(--color-lightblue-1);
+    border-radius: 0 2rem 2rem 0;
+    padding-left: 4rem;
+
+}
+
+
+.closed:hover > .navbar-item-icon{
+    padding-right: 0.5rem;
+}
+.closed{
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+}
+.opened{
+    background-color: var(--color-blue-2);
+    border-radius: 0 2rem 2rem 0;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    justify-content: flex-start;
+    box-shadow: 0 0.1rem 0.2rem var(--color-blue-1);
+    transition: 0.4s;
+    
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+
+.opened:hover{
+    background-color: var(--color-lightblue-1);
+    box-shadow: 0 0.05rem 0.1rem var(--color-lightblue-1);
+    transform: translateY(-0.2rem);
+}
+
+.navbar-item-icon .navbar-item-text{
+    transition: all 0.5s;
+}
+
+.navbar-controller{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2rem;
+    margin-left: calc(var(--navbar-width)  +  calc(var(--navbar-width) - 3rem)/2);
+    background-color: var(--color-darkblue-2);
+    border-radius: 0 1rem 1rem 0;
+    border-right: 0.1rem solid rgba(var(--color-blue-1-rgb),0.5);
+    transition: all 0.5s;
+}
+
+.navbar-controller-icon{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    filter: invert(31%) sepia(95%) saturate(1047%) hue-rotate(189deg) brightness(87%) contrast(103%);
+    transition: 0.4s;
+}
+
+.right-icon:hover{
+    transform: translateX(0.3rem) scaleX(1.2);
+}
+
+.left-icon:hover{
+    transform: translateX(-0.3rem) scaleX(1.2);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

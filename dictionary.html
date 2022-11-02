@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico"/>
+    <link href="styles/dictionary.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link href= "styles/nav.css" rel=stylesheet> -->
+
+      <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link href= "styles/variables.css" rel=stylesheet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@459&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--TODO: Change to the actual name-->
+    <title>EduSurf</title>
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-lightbulb"></i>  EduEase </a>
+     
+        <nav class="navbar">
+           <div id="close-navbar" class="fas fa-times"></div>
+           <a href="home.html" class="active">Home</a>
+           <a href="dictionary.html" class="active">Dictionary</a>
+           <a href="about.html">About</a>
+           <a href="contact.html">Contact</a>
+        </nav>
+     
+        <div class="icons">
+           <div id="account-btn" class="fas fa-user"></div>
+           <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+     
+     </header>
+     <br>
+<section style="padding-top:0; " >
+   <div style="float: right; background-color: #F0FDFA;">
+      <p style="font-size: 15px;">Translate this page:</p>
+   <div   id="google_translate_element"></div>
+   </div>
+   
+</section>
+
+<br>
+<br>
+     
+
+
+    <div class="main">
+        <section class="head">
+            <div class="about-container">    
+                <div class="title">
+                    Dictionary
+                </div>
+                
+            </div>
+            <!-- <img class="title-image" src="assets/images/Classroom.svg"> -->
+            </img>
+        </section>
+        <section class="middle">
+            <div class="input-container">
+                <form class="search-container">
+
+                    <input title="Search for a word" class="search-input" type="text" placeholder="Search for a word">
+                </form>
+                <a class="search-btn">
+                    <span class="search-btn-icon"><svg width="15" height="15" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.442 12.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM15 8.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+                </svg></span>
+                    <span class="search-btn-text">Search</span>
+                </a>
+            </div>
+        </section>
+        <div class="space-box"></div>
+        <div class="space-box"></div>
+        
+        <div class="space-box"></div>
+
+        
+    </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="js/navbar.js" type="module"></script>
+    <script src="BackEnd/getDictionaryWord.js" type="module"></script>
+    <script src="js/dictionary.js" type ="module"></script>
+
+</body>
+</html>

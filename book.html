@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"> <i class="fas fa-lightbulb"></i>  EduEase </a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="home.html" class="active">Home</a>
+      <a href="dictionary.html" class="active">Dictionary</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<br>
+<section style="padding-top:0; " >
+   <div style="float: right; background-color: #F0FDFA;">
+      <p style="font-size: 15px;">Translate this page:</p>
+   <div   id="google_translate_element"></div>
+   </div>
+   
+</section>
+
+<br>
+<br>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+<section class="heading-link">
+    <h1>DONATE E-BOOKS</h1>
+    <p> <a href="home.html">home</a> / DONATE E-BOOKS </p>
+ </section>
+
+ <section>
+    <div class="contact">
+      <div class="row">
+
+         <!-- <div class="image">
+            <img src="images/contact-img.png" alt="">
+         </div> -->
+         
+   
+         <form id="form" >
+            <h3>ADD BOOK</h3>
+            <input type="text" placeholder="Name" class="box" id="name" required>
+            <input type="email" placeholder="Email" class="box" id="email" required>
+            <input type="text" placeholder="Phone" class="box" id="phone" required>
+            <input type="text" placeholder="Subject" class="box" id="subject" required>
+            <input type="text" placeholder=" Book Author" class="box" id="author" required>
+            <input type="file" name="upload" id="file" class="box" accept="application/pdf,application/vnd.ms-excel" />
+            <input type="submit" value="ADD E-BOOK" class="btn">
+         </form>
+   
+      </div>
+    </div>
+ </section>
+ 
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> educa </h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html" class="link">home</a>
+         <a href="about.html" class="link">about</a>
+         <a href="courses.html" class="link">courses</a>
+         <a href="contact.html" class="link">contact</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">help center</a>
+         <a href="#" class="link">ask questions</a>
+         <a href="#" class="link">send feedback</a>
+         <a href="#" class="link">private policy</a>
+         <a href="#" class="link">terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+   
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+<script>
+   var form=document.getElementById('form')
+   form.addEventListener('submit',function(event){
+      event.preventDefault()
+
+      var username=document.getElementById('name').value
+      console.log(username)
+
+      var email=document.getElementById('email').value
+      console.log(email)
+
+      var PhoneNo=document.getElementById('phone').value
+      console.log(PhoneNo)
+
+      var Subject=document.getElementById('subject').value
+      console.log(Subject)
+
+      var BookAuthor=document.getElementById('author').value
+      console.log(BookAuthor)
+      var Doc=document.getElementById('file').value
+      console.log(Doc)
+      
+   })
+</script>
+
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+   }
+   </script>
+   
+   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
